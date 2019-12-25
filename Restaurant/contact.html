@@ -1,0 +1,67 @@
+<!--
+    Author: Cain
+    Date Created: 12/24/2019
+    Last Edited: 12/24/2019
+-->
+<!DOCTYPE html>
+<head>
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <center>
+        <h1>Steve's Steakhouse</h1>
+        </center>
+        <hr/>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact Us</a>
+        <hr />
+    </nav>
+    <section>
+        <form action="submit.html" method="POST" style="text-align:center; margin:auto">
+            <label for="fullName">Name:</label>
+            <input type="text" id="fullName" name="inquiry"><br/>
+            <label for="email">Email:</label>
+            <input type="text" id="fullName" name="inquiry"><br/>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="inquiry"><br/>
+            <label for="reasonForInquiry">Reason for Inquiry:</label>
+            <select id="reasonForInquiry" name="inquiry">
+                <option value="default" selected>Catering (default)</option>
+                <option value="privateParty">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br/>
+            <label for="additionalInformation">Additional Information:</label>
+            <textarea id="additionalInformation" name="inquiry"></textarea><br/>
+            Have you been to the restaurant?
+            <input type="radio" id="choice1" name="inquiry" value="yo">
+            <label for="choice1">No</label>
+            <input type="radio" id="choice2" name="inquiry" value="yes">
+            <label for="choice2">Yes</label><br/>
+            Best days to contact you:
+            <input type="checkbox" id="m" name="inquiry" value="m">
+            <label for="m">M&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox" id="t" name="inquiry" value="t">
+            <label for="t">T&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox" id="w" name="inquiry" value="w">
+            <label for="w">W&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox" id="th" name="inquiry" value="th">
+            <label for="th">Th&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox" id="f" name="inquiry" value="f">
+            <label for="f">F</label><br/>
+            <input type="submit" id="submit" name="inquiry" value="Send Request">
+        </form>
+    </section>
+    <footer>
+        <hr/>
+        <center>
+        Eat St., Food City, MN, 12345<br/>
+        555.1234
+        </center>
+        <hr/>
+    </footer>
+</body>
