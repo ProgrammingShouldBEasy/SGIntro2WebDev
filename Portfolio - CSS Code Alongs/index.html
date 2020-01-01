@@ -6,37 +6,36 @@ Date Created: 12/1/19
 Last Revised: 12/24/19
 -->
 
-<style>
-    html {
-        background-color: white;
-        color: black;
-    }
-</style>
-
 <html lang="en">
 
 <head>
     <title>My Portfolio</title>
+    <link href="testsyles.css" rel="stylesheet" type="text/css"/>
+    <style>
+        header {
+            background-color: darkgrey;
+        }
+    </style>
 </head>
 
 <body>
     <main>
-        <header>
+        <header style="background-color: #334CFF;">
             <h1>Portfolio</h1>
         </header>
 
-        <hr>
-        <nav>
+        <nav class="border"> <!-- NAV ELEMENT DOES NAVIGATION THINGS-->
+            <hr style="height: 75px; border: thin dotted red;"/>
             <h3>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
                 <a href="testimonials.html">Testimonials</a>
             </h3>
+            <hr style="width: 50%; height: 75px; border: 2px solid blueviolet;">
         </nav>
-        <hr>
 
         <section>
-            <article id="about-me">
+            <article class="border" id="about-me">
                 <h2><em>About Me</em></h2>
             </article>
             <a href="index.html" alt="home"><img src="images/LetterA.png" alt="The Letter A"/></a>
@@ -66,7 +65,6 @@ Last Revised: 12/24/19
             </span>
             <article id="experience">
                 <h2><em>Past experiences</em></h2>
-            </article>
             <a href="index.html" alt="home"><img src="images/LetterP.png" alt="The Letter P"></a>
             <table>
                 <caption>Employment History</caption>
@@ -115,6 +113,7 @@ Last Revised: 12/24/19
                     </td>
                 </tr>
             </table>
+        </article>
 
             <article id="Hobbies">
                 <h2><em>Hobbies</em></h2>
@@ -150,7 +149,7 @@ Last Revised: 12/24/19
                 </ul>
             </ul>
         </section>
-        <footer>
+        <footer style="background-color: fuchsia;">
             <hr>
             <p>&copy; 2020 Name. All rights reserved.</p>
         </footer>
