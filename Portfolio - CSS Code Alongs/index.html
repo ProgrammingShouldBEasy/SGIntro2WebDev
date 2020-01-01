@@ -3,17 +3,53 @@
 <!--
 Name: Cain
 Date Created: 12/1/19
-Last Revised: 12/24/19
+Last Revised: 1/1/20
 -->
 
 <html lang="en">
 
 <head>
     <title>My Portfolio</title>
-    <link href="testsyles.css" rel="stylesheet" type="text/css"/>
+    <link href="Styles/testsyles.css" rel="stylesheet" type="text/css"/>
+    <link href="Styles/main.css" rel="stylesheet" type="text/css"/>
     <style>
         header {
             background-color: darkgrey;
+        }
+
+        body{
+            background-color: #fff;
+            color: #aF5F5F;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        table, th, td {
+            border: 1px solid #6FB98F;
+            padding: 5px 10px;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+        }
+
+        tr {
+            height: 30px;
+        }
+
+        th {
+            background-color: #004445;
+            color: #6FB98F;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #021C1E;
         }
     </style>
 </head>
@@ -68,6 +104,7 @@ Last Revised: 12/24/19
             <a href="index.html" alt="home"><img src="images/LetterP.png" alt="The Letter P"></a>
             <table>
                 <caption>Employment History</caption>
+                <thead>
                 <tr>
                     <th>
                         Years of Employment
@@ -79,6 +116,8 @@ Last Revised: 12/24/19
                         Company
                     </th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr>
                     <td>
                         2020
@@ -112,6 +151,7 @@ Last Revised: 12/24/19
                         Ipsum
                     </td>
                 </tr>
+                </tbody>
             </table>
         </article>
 
