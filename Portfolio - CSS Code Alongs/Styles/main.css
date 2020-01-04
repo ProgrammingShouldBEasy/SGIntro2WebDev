@@ -10,26 +10,52 @@ body {
     font-family: 'Stoke', serif;
     background-color: #1F2833;
     color: #66FCF1;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 2px dashed #C5C6C7;
 }
 
-a {
+article {
+    margin-bottom: 16px;
+}
+
+.right-content {
+    float: left;
+}
+
+.float {
+    float: left;
+}
+
+.clear-float {
+    clear: both;
+}
+
+nav a {
+    text-align: center;
+    padding: 8px;
+    display: block;
+    margin: 20px;
+    width: 200px;
+    float: left;
+    border: 2px solid #45A29E;
+    font-size: 1.2em;
+    background-color: #0B0C10;
+    color: #66FCF1;
     text-decoration: none;
 }
 
-a:link {
-    color: white;
-}
-
-a:visited {
-    color: #45A29E;
-}
-
-a:hover {
+nav a:link {
     color: #66FCF1;
 }
 
-a:active {
-    color: #45A29E;
+nav a:visited {
+    color: #C5C6C7;
+}
+
+nav a:hover {
+    background-color: #66FCF1;
+    color: #0B0C10;
 }
 
 header, footer {
@@ -47,7 +73,11 @@ h1 {
 nav {
     border-top: 3px dashed #C5C6C7;
     border-bottom: 3px dashed #C5C6C7;
-    margin-top: 4px;
+    font-size: 1em;
+}
+
+nav a:active {
+    font-weight: bold;
 }
 
 label, fieldset {
@@ -79,6 +109,7 @@ select, textarea {
 }
 
 input[type=submit] {
+    border: 2px solid #45A29E;
     font-size: 1.2em;
     background-color: #0B0C10;
     color: #66FCF1;
@@ -87,8 +118,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #1F2833;
-    color: #45A29E;
+    background-color: #66FCF1;
+    color: #0B0C10;
 }
 
 textarea {
