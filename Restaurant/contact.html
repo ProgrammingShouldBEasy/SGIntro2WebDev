@@ -1,67 +1,160 @@
 <!--
     Author: Cain
     Date Created: 12/24/2019
-    Last Edited: 12/24/2019
+    Last Edited: 1/7/2020
 -->
 <!DOCTYPE html>
+
 <head>
     <title>Contact Us</title>
+    <link href="styles/restaurantStyles.css" type="text/css" rel="stylesheet">
 </head>
+
+<style>
+    table {
+        text-align: center;
+        margin: auto;
+    }
+
+    #t,
+    #w,
+    #th,
+    #f {
+        margin-left: 15px;
+    }
+
+    #submit,
+    #reasonForInquiry {
+        border-radius: 5px;
+        border: .5px solid grey;
+        padding: 5px;
+    }
+
+    .left {
+        text-align: left;
+        padding: 2px;
+    }
+
+    .right {
+        text-align: right;
+        padding: 2px;
+    }
+
+    #reasonForInquiry {
+        width: 100%;
+    }
+
+    /*Not sure what constitutes required fields, so these will be my best guess*/
+    [for=fullName],
+    [for=email],
+    [for=phone] {
+        font-weight: bold;
+    }
+</style>
+
 <body>
     <header>
-        <center>
         <h1>Steve's Steakhouse</h1>
-        </center>
-        <hr/>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="contact.html">Contact Us</a>
         <hr />
-    </nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact Us</a>
+            <hr />
+        </nav>
+    </header>
     <section>
-        <form action="submit.html" method="POST" style="text-align:center; margin:auto">
-            <label for="fullName">Name:</label>
-            <input type="text" id="fullName" name="inquiry"><br/>
-            <label for="email">Email:</label>
-            <input type="text" id="fullName" name="inquiry"><br/>
-            <label for="phone">Phone:</label>
-            <input type="text" id="phone" name="inquiry"><br/>
-            <label for="reasonForInquiry">Reason for Inquiry:</label>
-            <select id="reasonForInquiry" name="inquiry">
-                <option value="default" selected>Catering (default)</option>
-                <option value="privateParty">Private Party</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-            </select><br/>
-            <label for="additionalInformation">Additional Information:</label>
-            <textarea id="additionalInformation" name="inquiry"></textarea><br/>
-            Have you been to the restaurant?
-            <input type="radio" id="choice1" name="inquiry" value="yo">
-            <label for="choice1">No</label>
-            <input type="radio" id="choice2" name="inquiry" value="yes">
-            <label for="choice2">Yes</label><br/>
-            Best days to contact you:
-            <input type="checkbox" id="m" name="inquiry" value="m">
-            <label for="m">M&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="checkbox" id="t" name="inquiry" value="t">
-            <label for="t">T&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="checkbox" id="w" name="inquiry" value="w">
-            <label for="w">W&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="checkbox" id="th" name="inquiry" value="th">
-            <label for="th">Th&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="checkbox" id="f" name="inquiry" value="f">
-            <label for="f">F</label><br/>
-            <input type="submit" id="submit" name="inquiry" value="Send Request">
+        <form action="submit.html" method="POST">
+            <table>
+                <tr>
+                    <td class="right">
+                        <label for="fullName">Name:</label>
+                    </td>
+                    <td class="left">
+                        <input type="text" id="fullName" name="inquiry" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">
+                        <label for="email">Email:</label>
+                    </td>
+                    <td class="left">
+                        <input type="text" id="email" name="inquiry" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">
+                        <label for="phone">Phone:</label>
+                    </td>
+                    <td class="left">
+                        <input type="text" id="phone" name="inquiry" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">
+                        <label for="reasonForInquiry">Reason for Inquiry:</label>
+                    </td>
+                    <td class="left">
+                        <select id="reasonForInquiry" name="inquiry">
+                            <option value="default" selected>Catering</option>
+                            <option value="privateParty">Private Party</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">
+                        <label for="additionalInformation">Additional Information:</label>
+                    </td>
+                    <td class="left">
+                        <textarea id="additionalInformation" name="inquiry"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">
+                        <label for="haveYouBeen">Have you been to the restaurant?</label>
+                    </td>
+                    <td class="left">
+                        <input type="radio" id="choice1" name="inquiry" value="no">
+                        <label for="choice1">No</label>
+                        <input type="radio" id="choice2" name="inquiry" value="yes">
+                        <label for="choice2">Yes</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">
+                        <label for="bestDays">Best days to contact you:</label>
+                    </td>
+                    <td class="left">
+                        <input type="checkbox" id="m" name="inquiry" value="m">
+                        <label for="m">M</label>
+                        <input type="checkbox" id="t" name="inquiry" value="t">
+                        <label for="t">T</label>
+                        <input type="checkbox" id="w" name="inquiry" value="w">
+                        <label for="w">W</label>
+                        <input type="checkbox" id="th" name="inquiry" value="th">
+                        <label for="th">Th</label>
+                        <input type="checkbox" id="f" name="inquiry" value="f">
+                        <label for="f">F</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td class="left">
+                        <input type="submit" id="submit" name="inquiry" value="Send Request">
+                    </td>
+                </tr>
+            </table>
         </form>
     </section>
     <footer>
-        <span  style="position: absolute; bottom:0vh; left: 0vw; width:100vw; text-align: center;">
-        <hr/>
-        Eat St., Food City, MN, 12345<br/>
-        555.1234
-        <hr/>
+        <span>
+            <hr />
+            Eat St., Food City, MN, 12345<br />
+            555.1234
+            <hr />
         </span>
     </footer>
 </body>

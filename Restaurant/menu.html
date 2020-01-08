@@ -1,86 +1,125 @@
 <!--
     Author: Cain
     Date Created: 12/24/2019
-    Last Edited: 12/24/2019
+    Last Edited: 1/7/2020
 -->
 <!DOCTYPE html>
+
 <head>
     <title>Menu</title>
+    <link href="styles/restaurantStyles.css" type="text/css" rel="stylesheet">
 </head>
+
+<style>
+    .menu-title {
+        font-size: 1.5em;
+    }
+
+    .menu-description {
+        font-size: 1em;
+    }
+
+    .menu {
+        text-align: center;
+        margin: auto;
+    }
+
+    .drinks {
+        text-align: left;
+    }
+
+    .drink-names {
+        font-size: 1.2em;
+    }
+
+    main {
+        background-color: lightblue;
+    }
+</style>
+
 <body>
     <header>
-        <center>
         <h1>Steve's Steakhouse</h1>
-        </center>
-        <hr/>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="contact.html">Contact Us</a>
         <hr />
-    </nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact Us</a>
+            <hr />
+        </nav>
+    </header>
+    <main>
     <section>
-        <table style="text-align:center; margin:auto">
-            <tr>
+        <table class="menu">
+            <tr class="menu-title">
                 <th>Burger and Fries</th>
                 <th>Hot Dog and Chips</th>
                 <th>Italian Sausage and Peppers</th>
             </tr>
-            <tr>
-                <td>An American Classic!<br/>
-                Your choice - with or without cheese<br/>
-                Pickle, onion, tomato, and lettuce<br/>
-                Served with our famous thick cut french fries<br/>
-                $7.95</td>
-                <td>A Summer Classic!<br/>
-                Your chocie -w hite or wheat bun<br/>
-                Relish, mustard, and ketchup<br/>
-                Served with our house-made chips<br/>
-                $7.95</td>
-                <td>An All-Time Favorite!<br/>
-                Your choice - mild or spicy Cole Slaw<br/>
-                Served with garlic mashers<br/>
-                $10.95</td>
+            <tr class="menu-description">
+                <td>An American Classic!<br />
+                    Your choice - with or without cheese<br />
+                    Pickle, onion, tomato, and lettuce<br />
+                    Served with our famous thick cut french fries<br />
+                    $7.95</td>
+                <td>A Summer Classic!<br />
+                    Your chocie -w hite or wheat bun<br />
+                    Relish, mustard, and ketchup<br />
+                    Served with our house-made chips<br />
+                    $7.95</td>
+                <td>An All-Time Favorite!<br />
+                    Your choice - mild or spicy Cole Slaw<br />
+                    Served with garlic mashers<br />
+                    $10.95</td>
             </tr>
-            <tr>&nbsp;</tr>
-            <tr>&nbsp;</tr>
-            <tr>&nbsp;</tr>
-            <tr>&nbsp;</tr>
-            <tr>&nbsp;</tr>
-            <tr>&nbsp;</tr>           
-            <tr>
+            <tr class="menu-title">
                 <th>Tenderloin Sandwich and Chips</th>
                 <th>House Salad</th>
                 <th>Brisket Sandwich and Fries</th>
             </tr>
-            <tr>
-                <td>Really Hits the Spot!<br/>
-                Plain or Sesame Seed Bun<br/>
-                Pickle, onion, tomato, and lettuce<br/>
-                Served with our house-made chips<br/>
-                $8.95</td>
-                <td>On the Lighter Side<br/>
-                Your choice - with or without cheese<br/>
-                Iceberg lettuce, tomatoes, peppers<br/>
-                Thousand Island or Ranch<br/>
-                DressingServed with a dinner roll<br/>
-                $6.95</td>
-                <td>A Taste of Texas!<br/>
-                Smoked Brisket on thick-cut<br/> 
-                Texas Toast<br/>
-                Cole Slaw<br/>
-                Served with our famous thick-cut french fries<br/>
-                $7.95</td>
+            <tr class="menu-description">
+                <td>Really Hits the Spot!<br />
+                    Plain or Sesame Seed Bun<br />
+                    Pickle, onion, tomato, and lettuce<br />
+                    Served with our house-made chips<br />
+                    $8.95</td>
+                <td>On the Lighter Side<br />
+                    Your choice - with or without cheese<br />
+                    Iceberg lettuce, tomatoes, peppers<br />
+                    Thousand Island or Ranch<br />
+                    DressingServed with a dinner roll<br />
+                    $6.95</td>
+                <td>A Taste of Texas!<br />
+                    Smoked Brisket on thick-cut<br />
+                    Texas Toast<br />
+                    Cole Slaw<br />
+                    Served with our famous thick-cut french fries<br />
+                    $7.95</td>
+            </tr>
+            <tr class="drinks menu-title">
+                <th>Beverages</th><th></th><th></th>
+            </tr>
+            <tr class="drinks menu-description">
+                <td class="drink-names">Root Beer</td><td></td><td>$3.00</td>
+            </tr>
+            <tr class="drinks menu-description">
+                <td class="drink-names">Bottled Water</td class="drink-names"><td></td><td>$1.00</td>
+            </tr>
+            <tr class="drinks menu-description">
+                <td class="drink-names">Lemonade</td class="drink-names"><td></td><td>$1.00</td>
+            </tr>
+            <tr class="drinks menu-description">
+                <td class="drink-names">Iced Tea</td class="drink-names"><td></td><td>$1.25</td>
             </tr>
         </table>
     </section>
+</main>
     <footer>
-        <span  style="position: absolute; bottom:0vh; left: 0vw; width:100vw; text-align: center;">
-        <hr/>
-        Eat St., Food City, MN, 12345<br/>
-        555.1234
-        <hr/>
+        <span>
+            <hr />
+            Eat St., Food City, MN, 12345<br />
+            555.1234
+            <hr />
         </span>
     </footer>
 </body>
